@@ -1,23 +1,22 @@
-import logo from "./logo.svg";
+// Style
 import "./App.css";
-import landing from "./component/landing";
+// Component
+import Landing from "./component/landing";
+import contactUs from "./component/contactUs";
+// mModule
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Welcome to doggies Website</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <div className="App">
+          <Route exact path="/" component={Landing} />
+
+          <Route path="/contactUs" component={contactUs} />
+        </div>
+      </Switch>
+    </Router>
   );
 }
 

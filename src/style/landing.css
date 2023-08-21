@@ -1,0 +1,78 @@
+.container {
+  background-color: rgb(83, 113, 136);
+
+  /* height: 100vh; */
+}
+.header {
+  margin: 0;
+  height: 20vh;
+  padding: 1px;
+}
+
+.flagPicker {
+  height: 30px;
+  margin: 20px 20px 0 0;
+  width: 45px;
+}
+.title {
+  font-family: "hiladous";
+  font-size: 3.55rem;
+}
+h2 {
+  font-size: 30px;
+  font-family: gilroyregular;
+  line-height: 25px;
+  font-weight: 700;
+  color: white;
+}
+.accroche {
+  color: #00cdd0;
+}
+
+.desc {
+  height: 100vh;
+}
+.start {
+  background-color: #e52d56;
+  width: 20rem;
+  height: 4rem;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 20px;
+  box-shadow: none;
+  transition: transform 0.1s;
+  border: none;
+}
+.start:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+.money {
+  margin-top: 4cqh;
+  height: 300px;
+  width: 320px;
+}
+.appDesc {
+  height: 100vh;
+}
+.concurence {
+  height: 100vh;
+}
+.descImage {
+  height: 40vh;
+  width: 40vw;
+}
+.descriptionP {
+  font-family: gilroyregular;
+  font-size: 25px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+.price {
+  /* color: white; */
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(45deg, orange, orangered);
+}
