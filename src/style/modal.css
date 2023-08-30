@@ -1,19 +1,10 @@
 .modal-container {
   display: flex;
   justify-content: flex-end;
-  margin-right: 10px;
   z-index: 1;
   right: 0;
   position: relative;
 
-  /* position: relative;
-
-  flex-wrap: wrap;
-  width: 45px;
-  height: 70px;
-  display: flex;
-  right: 0; */
-  /* justify-content: end; */
   margin: 10px 20px 0 0;
 }
 
@@ -25,15 +16,6 @@
   right: 0px;
   height: 30px;
   align-items: flex-end;
-}
-.flag-button-top {
-  /* background: none;
-  right: 0px;
-  position: absolute;
-  border: none;
-  cursor: pointer;
-  margin-top: 20px;
-} */
 }
 
 .modal-content {
@@ -60,4 +42,19 @@
   /* justify-content: flex-end; */
   /* align-content: flex-end; */
   /* align-items: "flex-end"; */
+}
+
+@media screen and (min-width: 1000px) {
+  .flag {
+    width: 5.5rem;
+    height: 4rem;
+  }
+
+  .flag-button {
+    width: 5.5rem;
+    height: 4rem;
+  }
+  .modal-container {
+    margin: 30px 60px 0 0;
+  }
 }

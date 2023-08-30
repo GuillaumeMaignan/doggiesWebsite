@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-doggies-dev-151645-authRole",
+      "UnauthRoleArn": "arn:aws:iam::064799621249:role/amplify-doggies-dev-151645-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::064799621249:role/amplify-doggies-dev-151645-authRole",
+      "Region": "eu-west-3",
+      "DeploymentBucketName": "amplify-doggies-dev-151645-deployment",
+      "UnauthRoleName": "amplify-doggies-dev-151645-unauthRole",
+      "StackName": "amplify-doggies-dev-151645",
+      "StackId": "arn:aws:cloudformation:eu-west-3:064799621249:stack/amplify-doggies-dev-151645/a1215190-2889-11ee-b841-065148517980",
+      "AmplifyAppId": "d285qc565ydmi"
+    },
+    "categories": {
+      "auth": {
+        "doggies": {}
+      }
+    }
+  }
+}

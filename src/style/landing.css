@@ -1,7 +1,15 @@
 .container {
   background-color: rgb(83, 113, 136);
+  padding-bottom: 18px;
 
   /* height: 100vh; */
+}
+h1 {
+  font-size: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+p {
+  font-size: 20px;
 }
 .header {
   margin: 0;
@@ -16,7 +24,7 @@
 }
 .title {
   font-family: "hiladous";
-  font-size: 3.55rem;
+  font-size: 4rem;
 }
 h2 {
   font-size: 30px;
@@ -31,6 +39,9 @@ h2 {
 
 .desc {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .start {
   background-color: #e52d56;
@@ -44,25 +55,52 @@ h2 {
   transition: transform 0.1s;
   border: none;
 }
+#joinBtn {
+  background-color: #0e0860;
+  margin: 30px 0 20px 0;
+}
 .start:hover {
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
   transform: scale(1.2);
 }
-.money {
+.mascotte {
   margin-top: 4cqh;
   height: 300px;
   width: 320px;
 }
+
+.separator {
+  width: 100vw;
+  background-color: #291b44;
+  height: 5vh;
+  position: relative;
+  bottom: 0;
+}
+.bottomSvg {
+  fill: #291b44;
+  position: relative;
+  bottom: -5px;
+}
+
+.topSvg {
+  transform: rotate(180deg);
+  fill: #291b44;
+  position: relative;
+  top: -3px;
+}
 .appDesc {
-  height: 100vh;
+  height: auto;
 }
-.concurence {
-  height: 100vh;
-}
+
 .descImage {
   height: 40vh;
-  width: 40vw;
+  width: 90%;
+  object-fit: fill;
+  border-radius: 10px;
+}
+.textContainer {
+  margin: 20px;
 }
 .descriptionP {
   font-family: gilroyregular;
@@ -75,4 +113,65 @@ h2 {
   background-clip: text;
   color: transparent;
   background-image: linear-gradient(45deg, orange, orangered);
+}
+.reference {
+  color: rgb(211, 211, 211);
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-family: cursive;
+}
+@media screen and (min-width: 1000px) {
+  .appDesc {
+    /* display: flex; */
+    margin-top: 30px;
+    height: 100vh;
+    width: 100vw;
+  }
+  .module {
+    width: 50%;
+    height: 50vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .desc {
+    align-items: flex-start;
+    padding-left: 10%;
+  }
+  .title {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 7%;
+    font-size: 6rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .descriptionP {
+    font-size: 3rem;
+  }
+  .mascotte {
+    position: absolute;
+    right: 0;
+    /* height: 700px; */
+    height: 100%;
+    width: auto;
+  }
+
+  /* Test landing 2 */
+  .descImage {
+    height: 40vh;
+    width: 45%;
+
+    position: absolute;
+    right: 0;
+    margin: 0 5% 0 5%;
+  }
+  #leftDesc {
+    direction: rtl;
+  }
+  #leftImg {
+    left: 0;
+  }
 }

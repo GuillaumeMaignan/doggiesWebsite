@@ -14,7 +14,7 @@ import dogs from "../assets/picture/240678_2_dogs_next_to_each_other_cartoon_sty
 import happyDog from "../assets/picture/happyDog.jpeg";
 import dogWalker from "../assets/picture/dog-walker.jpeg";
 import orderDog from "../assets/picture/order.png";
-import pawSeparator from "../assets/picture/pngfind.com-paw-png-327881.png";
+// import money from "../assets/picture/money.png";
 
 export default function Landing() {
   // Function qui recupere le langage depuis Modal
@@ -44,7 +44,7 @@ export default function Landing() {
           <br></br> 1 hour walk: <span className="price">40 ₪</span>
         </p>
 
-        <Link to="/contactUs">
+        <Link to="/landing2">
           <button className="start"> Let's start</button>
         </Link>
         <img className="mascotte" alt="mascotte" src={dogs}></img>
@@ -61,23 +61,14 @@ export default function Landing() {
       </div>
       <section className="appDesc">
         <div className="module">
-          <div className="textContainer">
-            <h1> Stay connected to your dog: </h1>
-            <p> You can easly check where is your dog and how he is</p>
-            <p>
-              In the same time our team will send you very cool picture of your
-              dog
-            </p>
-          </div>
-          <img src={mapdog} className="descImage" alt="mapDog"></img>
+          <h1> Stay connected to your dog: </h1>
+          <p> You can easly check where is your dog and how he is</p>
+          <img src={mapdog} className="descImage" alt="otherDogWalk"></img>
         </div>
         <div className="module">
-          <div className="textContainer">
-            <h1> Order and manage your walk online: </h1>
-            <p> Just symply check your days and timeline in your calendar </p>
-          </div>
-          <img src={orderDog} className="descImage" alt="orderDog"></img>
-
+          <h1> Order and manage your walk online: </h1>
+          <p> Just symply check your days and timeline in your calendar </p>
+          <img src={orderDog} className="descImage" alt="otherDogWalk"></img>
           <Link to="/order">
             <button id="joinBtn" className="start">
               Give a try
@@ -85,43 +76,14 @@ export default function Landing() {
           </Link>
         </div>
       </section>
-      <img
-        style={{ width: "100vw" }}
-        src={pawSeparator}
-        alt="pawSeparator"
-        className="pawSeparator"
-      ></img>
-      <section className="appDesc" id="leftDesc">
+      <section className="appDesc">
         <div className="module">
-          <div className="textContainer">
-            <h1> Other dog walker </h1>
-            <p>
-              Walking too many dogs compromises individual attention, safety,
-              and overall experience. Prioritizing a manageable number ensures
-              better care and well-being for dogs and owners.
-            </p>
-          </div>
-          <img
-            src={dogWalker}
-            className="descImage"
-            alt="otherDogWalk"
-            id="leftImg"
-          ></img>
+          <h1> Other dog walker: </h1>
+          <img src={dogWalker} className="descImage" alt="otherDogWalk"></img>
         </div>
         <div className="module">
-          <div className="textContainer">
-            <h1>With Akelaviv </h1>
-            <p>
-              המסעדים שלנו לסיוע בטיולי כלבים מטפחים עד שלושה כלבים במקביל
-              ומעניקים להם תשומת לב מיוחדת.
-            </p>
-          </div>
-          <img
-            src={happyDog}
-            className="descImage"
-            alt="happydog"
-            id="leftImg"
-          ></img>
+          <h1>With Akelaviv: </h1>
+          <img src={happyDog} className="descImage" alt="otherDogWalk"></img>
           {/* <img className="descImage" alt="otherDogWalk"></img> */}
           <Link to="/signUp">
             <button id="joinBtn" className="start">

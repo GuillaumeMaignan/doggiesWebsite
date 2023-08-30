@@ -15,11 +15,11 @@ const Modal = ({ updateFlag }) => {
     let newFlag;
     if (lang === "fr") {
       newFlag = fra;
-    } else if (lang === "spain") {
+    } else if (lang === "es") {
       newFlag = spa;
-    } else if (lang === "isr") {
+    } else if (lang === "he") {
       newFlag = isr;
-    } else if (lang === "eng") {
+    } else if (lang === "en") {
       newFlag = uk;
     }
     setFlag(newFlag);
@@ -42,18 +42,18 @@ const Modal = ({ updateFlag }) => {
       </button>
       {isModalOpen && (
         <div className="modal-content">
-          <button className="flag-button" onClick={() => setLanguage("eng")}>
+          <button className="flag-button" onClick={() => setLanguage("en")}>
             <img className="flag" src={uk} alt="english"></img>
           </button>
 
-          <button className="flag-button" onClick={() => setLanguage("isr")}>
+          <button className="flag-button" onClick={() => setLanguage("he")}>
             <img className="flag" src={isr} alt="hebrew"></img>
           </button>
           <button className="flag-button" onClick={() => setLanguage("fr")}>
             <img className="flag" src={fra} alt="french"></img>
           </button>
 
-          <button className="flag-button" onClick={() => setLanguage("spain")}>
+          <button className="flag-button" onClick={() => setLanguage("es")}>
             <img className="flag" src={spa} alt="spanish"></img>
           </button>
         </div>
