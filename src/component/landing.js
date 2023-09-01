@@ -27,9 +27,10 @@ export default function Landing() {
   return (
     <div className="container">
       <header className="header">
+        <h1 className="title">Akelaviv </h1>
+
         <Modal updateFlag={updateLandingFlag} />
         {/* Hebreux version :   */}
-        <h1 className="title">Akelaviv </h1>
         {/* <h1 style={{ fontSize: "5rem" }} className="title">הכלביב</h1> */}
 
         {/* <h1 className="title">Doggies </h1> */}

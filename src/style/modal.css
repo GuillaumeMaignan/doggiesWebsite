@@ -3,7 +3,7 @@
   justify-content: flex-end;
   z-index: 1;
   right: 0;
-  position: relative;
+  position: absolute;
 
   margin: 10px 20px 0 0;
 }
@@ -46,13 +46,13 @@
 
 @media screen and (min-width: 1000px) {
   .flag {
-    width: 5.5rem;
-    height: 4rem;
+    width: 4rem;
+    height: 3rem;
   }
 
   .flag-button {
-    width: 5.5rem;
-    height: 4rem;
+    width: 4rem;
+    height: 3rem;
   }
   .modal-container {
     margin: 30px 60px 0 0;
